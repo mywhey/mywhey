@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Protein House – Rampur’s trusted supplement store. Explore our products and deals at mywhey.in.">
+  <title>The Protein House</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-red-600">
+  The Protein House
+  <span class="block text-sm font-normal text-gray-500"><span class="italic">mywhey.in</span></span>
+</a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <a href="#products" class="hover:text-red-600 transition">Top Products</a>
+        <a href="#brands" class="hover:text-red-600 transition">Top Brands</a>
+        <a href="#about" class="hover:text-red-600 transition">About Us</a>
+        <a href="#visit" class="hover:text-red-600 transition">Visit Us</a>
+      </nav>
+
+      <!-- Mobile Toggle Button -->
+      <button id="mobile-menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#products" class="block py-2 text-gray-700 hover:text-red-600">Top Products</a>
+      <a href="#brands" class="block py-2 text-gray-700 hover:text-red-600">Top Brands</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-red-600">About Us</a>
+      <a href="#visit" class="block py-2 text-gray-700 hover:text-red-600">Visit Us</a>
+    </div>
+
+    <!-- Toggle Script -->
+    <script>
+      document.getElementById("mobile-menu-toggle").onclick = function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      };
+    </script>
+  </header>
+
+
+  <!-- Hero Section -->
+  <!-- <section class="bg-gray-100 py-20 text-center"> -->
+  <section class="bg-gray-100 py-20 text-center bg-cover bg-center bg-no-repeat"
+    style="background-image: url('images/site\ banner.png');">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-extrabold mb-4 text-indigo-700">Fuel Your Fitness Journey</h2>
+      <p class="text-lg text-gray-700 mb-2">Premium Supplements • Honest Pricing</p>
+      <p class="text-sm text-gray-600 mb-6 italic">Powered by <strong>mywhey.in</strong> — Official site of The Protein House, Rampur</p>
+    </div>
+  </section>
+
+  <!-- Top Products -->
+  <section id="products" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4  justify-center">
+      <h2 class="text-4xl font-bold text-indigo-700 text-center mb-12">Top Products</h2>
+      <div class="flex flex-wrap justify-center gap-8 text-center">
+
+        <div class="w-[350px] bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition flex flex-col items-center">
+          <img src="/images/whey display-Photoroom.png" alt="whey display"
+            class="max-w-[200px] max-h-[200px] object-contain mb-3">
+          <h3 class="text-xl font-semibold mb-2">Whey & Isolate Proteins</h3>
+          <p class="text-sm text-gray-600">High-quality protein for muscle recovery and growth.</p>
+        </div>
+
+        <div class="w-[350px] bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition flex flex-col items-center">
+          <img src="/images/gainer display-Photoroom.png" alt="gainer display"
+            class="max-w-[200px] max-h-[200px] object-contain mb-3">
+          <h3 class="text-xl font-semibold mb-2">Muscle & Mass Gainers</h3>
+          <p class="text-sm text-gray-600">Gain healthy weight with balanced calories and nutrients.</p>
+        </div>
+
+        <div class="w-[350px] bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition flex flex-col items-center">
+          <img src="/images/creatine display-Photoroom.png" alt="creatine display"
+            class="max-w-[200px] max-h-[200px] object-contain mb-3">
+          <h3 class="text-xl font-semibold mb-2">Creatine Supplements</h3>
+          <p class="text-sm text-gray-600">Improve strength, endurance, and workout performance.</p>
+        </div>
+
+        <div class="w-[350px] bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition flex flex-col items-center">
+          <img src="/images/pre display-Photoroom.png" alt="pre display"
+            class="max-w-[200px] max-h-[200px] object-contain mb-3">
+          <h3 class="text-xl font-semibold mb-2">Pre-Workouts</h3>
+          <p class="text-sm text-gray-600">Boost your energy and focus before every session.</p>
+        </div>
+
+        <div class="w-[350px] bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition flex flex-col items-center">
+          <img src="/images/bcaa display-Photoroom.png" alt="bcaa display"
+            class="max-w-[200px] max-h-[200px] object-contain mb-3">
+          <h3 class="text-xl font-semibold mb-2">BCAAs & EAAs</h3>
+          <p class="text-sm text-gray-600">Reduce muscle fatigue and improve recovery.</p>
+        </div>
+
+        <div class="w-[350px] bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition flex flex-col items-center">
+          <img src="/images/multivitamin display-Photoroom.png" alt="vitamin display"
+            class="max-w-[200px] max-h-[200px] object-contain mb-3">
+          <h3 class="text-xl font-semibold mb-2">Multivitamins</h3>
+          <p class="text-sm text-gray-600">Support overall wellness with essential daily nutrients.</p>
+        </div>
+
+        <!--
+      <div class="w-[350px] bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition flex flex-col items-center">
+        <img src="/images/omega3 display.png" alt="omega3 display" class="max-w-[200px] max-h-[200px] object-contain mb-3">
+        <h3 class="text-xl font-semibold mb-2">Omega-3</h3>
+        <p class="text-sm text-gray-600">Promotes heart health, brain function & joint support.</p>
+      </div> -->
+
+        <div class="w-[350px] bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition flex flex-col items-center">
+          <img src="/images/nutrition display-Photoroom.png" alt="peanutbutter display"
+            class="max-w-[200px] max-h-[200px] object-contain mb-3">
+          <h3 class="text-xl font-semibold mb-2">Peanut Butter, Oats, Muesli</h3>
+          <p class="text-sm text-gray-600">Tasty source of protein, High-fiber, nutritious breakfast with natural
+            ingredients.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Brands -->
+  <section id="brands" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-4xl font-bold text-indigo-700 text-center mb-12">Top Brands We Carry</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- QNT -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="/images/qnt.png" alt="QNT Logo" class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">QNT</h4>
+          <p class="text-gray-600">Belgium-based brand known for Whey Protein, Mass Gainers, and Pre-Workout blends.</p>
+        </div>
+
+        <!-- GNC -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/GNC.png" alt="GNC Logo" class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">GNC</h4>
+          <p class="text-gray-600">Global leader in wellness and nutrition, offering multivitamins, proteins, and more.
+          </p>
+        </div>
+
+        <!-- Avvatar -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/avvatar.png" alt="Avvatar Logo" class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">Avvatar</h4>
+          <p class="text-gray-600">Indian-made premium whey protein and clean supplements straight from dairy farms.</p>
+        </div>
+
+        <!-- Dymatize -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/dymatize.png" alt="Dymatize Logo" class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">Dymatize</h4>
+          <p class="text-gray-600">Trusted by athletes for ISO 100 whey isolate and scientifically-backed formulas.</p>
+        </div>
+
+        <!-- One Nutrition -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/OptimumNutrition.png" alt="Optimum Nutrition Logo"
+            class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">Optimum Nutrition</h4>
+          <p class="text-gray-600">Known for Gold Standard Whey, amino acids, and pre-workout formulas trusted
+            worldwide.</p>
+        </div>
+
+        <!-- Fast&UP -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/fastandup.png" alt="Fast&UP Logo" class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">Fast&UP</h4>
+          <p class="text-gray-600">India’s top effervescent brand for hydration, energy, and recovery support.</p>
+        </div>
+
+        <!-- MuscleBlaze -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/muscleblaze.png" alt="MuscleBlaze Logo"
+            class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">MuscleBlaze</h4>
+          <p class="text-gray-600">Affordable and lab-certified protein, gainer, creatine, and pre-workout solutions.
+          </p>
+        </div>
+
+        <!-- BiotechUSA -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/biotechusa.png" alt="BiotechUSA Logo" class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">BiotechUSA</h4>
+          <p class="text-gray-600">European brand known for premium-quality supplements for strength & endurance.</p>
+        </div>
+
+        <!-- As It Is Nutrition -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/asitis.png" alt="As It Is Nutrition Logo"
+            class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">As It Is Nutrition</h4>
+          <p class="text-gray-600">Popular for ATOM whey protein brand, creatine, and BCAAs at budget prices.</p>
+        </div>
+
+        <!-- Isopure -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/isopure.png" alt="Isopure Logo" class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">Isopure</h4>
+          <p class="text-gray-600">Zero-carb, high-purity whey isolate — ideal for lean muscle and keto support.</p>
+        </div>
+
+        <!-- Pintola -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/pintola.png" alt="Pintola Logo" class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">Pintola</h4>
+          <p class="text-gray-600">One of India’s leading peanut butter brands, offering natural and high-protein
+            options.</p>
+        </div>
+
+        <!-- MYFITNESS -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+          <img src="images/myfitness.jpg" alt="MYFITNESS Logo" class="max-w-[120px] max-h-[80px] object-contain mb-3">
+          <h4 class="text-xl font-semibold mb-2">MYFITNESS</h4>
+          <p class="text-gray-600">India’s favorite fitness peanut butter brand — official partner of Salman Khan.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Benefits -->
+  <section id="about" class="bg-indigo-50 py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-4xl font-bold text-indigo-700 text-center mb-6">Why Choose The Protein House?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div>
+          <h4 class="text-xl font-semibold">Genuine Supplements</h4>
+          <p class="text-gray-600 mt-2">We stock only 100% authentic products from certified and trusted brands.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold">In-Store Experience</h4>
+          <p class="text-gray-600 mt-2">Visit our Rampur store for personalized assistance, advice, and product demos.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold">Online Store Coming Soon</h4>
+          <p class="text-gray-600 mt-2">We’ll soon offer nationwide delivery. For now, we’re open Mon–Sat,
+            10:30AM–8:00PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Photos Section -->
+  <section id="store-photos" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-indigo-700 mb-6">Inside Our Store</h2>
+      <p class="text-lg text-gray-600 mb-10">A glimpse of where the magic happens!</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="/images/store entry.JPG" alt="Store Photo 1" class="rounded-lg shadow object-cover w-full h-64">
+        <img src="/images/store a.jpg" alt="Store Photo 2" class="rounded-lg shadow object-cover w-full h-64">
+        <img src="/images/store b.jpg" alt="Store Photo 3" class="rounded-lg shadow object-cover w-full h-64">
+        <!-- Add more images as needed -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-4xl font-bold text-indigo-700 text-center mb-6">What Our Customers Say</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-left">
+          <p class="text-gray-700 italic">"The Protein House is the only store I trust for authentic supplements. Prices
+            are fair and the owner is super knowledgeable!"</p>
+          <div class="mt-4 text-sm font-semibold text-indigo-700">— Ramesh S., Rampur</div>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-left">
+          <p class="text-gray-700 italic">"Got my whey protein and creatine combo at a great price. Will definitely come
+            back!"</p>
+          <div class="mt-4 text-sm font-semibold text-indigo-700">— Priya K., Moradabad</div>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-left">
+          <p class="text-gray-700 italic">"They recommended exactly what I needed for muscle gain. Amazing service and
+            fast response."</p>
+          <div class="mt-4 text-sm font-semibold text-indigo-700">— Ankit T., Bilaspur</div>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-left">
+          <p class="text-gray-700 italic">"Authentic products, no nonsense. My go-to place for Fast&Up and MB
+            supplements."</p>
+          <div class="mt-4 text-sm font-semibold text-indigo-700">— Swati R., Rampur</div>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-left">
+          <p class="text-gray-700 italic">"I love how they have everything from pre-workouts to peanut butter. One-stop
+            shop for fitness!"</p>
+          <div class="mt-4 text-sm font-semibold text-indigo-700">— Deepak J., Rampur</div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- Visit Us -->
+  <section id="visit" class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-4xl font-bold text-indigo-700 text-center mb-6">Visit Our Store</h3>
+        <p class="text-gray-700 mb-4">Come explore our wide range of supplements in person!</p>
+        <ul class="text-gray-600 space-y-4 mb-6">
+          <li><strong>📍 Address:</strong><br>CP-6, Basement Floor, Shaukat Ali Road,<br>Near Manthan
+            Restaurant,<br>Rampur, Uttar Pradesh - 244901</li>
+          <li><strong>📞 Phone:</strong> <a href="tel:+917599900888"
+              class="text-blue-600 hover:underline">+91-7599900888</a></li>
+          <li><strong>🕒 Hours:</strong> Mon–Sat, 10:30 AM – 8:00 PM</li>
+        </ul>
+        <!-- Contact Buttons -->
+        <div class="flex flex-wrap gap-4">
+          <a href="tel:+917599900888"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg shadow transition">
+            📞 Call Now
+          </a>
+          <a href="https://wa.me/917599900888" target="_blank"
+            class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-lg shadow transition">
+            💬 WhatsApp Us
+          </a>
+          <a href="https://maps.app.goo.gl/XkVyLUzGsKEMfg9ZA" target="_blank" rel="noopener"
+            class="bg-gray-800 hover:bg-gray-900 text-white px-5 py-2 rounded-lg shadow transition">
+            🧭 Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- Map Embed -->
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805.876194818271!2d79.02055056957491!3d28.788706198473754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a8d005efdf50b%3A0xd6c5a7b6a2c8967d!2sThe%20Protein%20House!5e1!3m2!1sen!2sin!4v1752559239783!5m2!1sen!2sin"
+          width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    <p>&copy; 2025 The Protein House. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
